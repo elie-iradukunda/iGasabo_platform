@@ -6,6 +6,7 @@ import four from "../assets/join.svg"
 import five from "../assets/message.svg"
 import six from "../assets/sup.svg"
 import "../assets/styles/Howitworks.css";
+import Testimonials from "./Testimonials";
 
 
 
@@ -37,14 +38,12 @@ const HowitWorks=()=>{
 
              <div className="howitworks">
                 <img src={two} alt="" />
-                <h2>Share your ideas</h2>
+                <h2>Follow progress</h2>
 
                 <p>
-                    Post your thoughts,<br />
-                     concerns, or dreams for  <br />
-                     your neighborhood.  <br />
-                     Your voice helps shape what  <br />
-                     comes next.
+                 Track your posts <br />
+                  and see real improvements  <br />
+                  as your community grows and changes.
                 </p>
             </div>
 
@@ -106,11 +105,17 @@ const HowitWorks=()=>{
                 </p>
             </div>
 
+          
+
 
                 
             </div>
+              <button id="joinnow">Join now</button>
         </div>
+
+        <Testimonials/>
         </>
+        
     )
 }
 export default HowitWorks;

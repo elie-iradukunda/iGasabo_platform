@@ -1,0 +1,100 @@
+/* Main 3-column layout */
+.totalpage {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 40px 20px;
+  background-color: #f0f4f8;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* Part 1: Left side grid */
+.parts {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+
+.part1 {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+.part1 img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 12px;
+}
+
+/* Part 2: Center column */
+.part2 {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  height: fit-content;
+}
+
+
+.part2 img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.part2 h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.part2 p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Part 3: Right side grid */
+.part3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.pa {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.pa h2 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #2a2a2a;
+}
+
+.pa p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 992px) {
+  .totalpage {
+    grid-template-columns: 1fr;
+  }
+
+  .part2 {
+    order: -1; /* Show center content first on small screens */
+    margin-bottom: 30px;
+  }
+}

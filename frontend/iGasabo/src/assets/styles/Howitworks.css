@@ -56,3 +56,22 @@
   line-height: 1.6;
   font-size: 0.95rem;
 }
+#joinnow {
+  display: block;
+  margin: 40px auto 0 auto; 
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #ff6d1e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#joinnow:hover {
+  background-color: #fdb90d;
+  transform: translateY(-2px);
+}
+
