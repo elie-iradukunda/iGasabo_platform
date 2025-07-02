@@ -2,7 +2,7 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import pool from './config/db.js';
+import issueRoutes from './routes/issueRoutes.js';
 import userRoutes from './routes/userRoutes.js';
 import roleRoutes from "./routes/roleRoutes.js";
 
@@ -19,7 +19,7 @@ app.use("/roles", roleRoutes);
 
 
 app.use('/api/users', userRoutes);
-app.use('roles',userRoutes)
+app.use('/api/issues', issueRoutes);
 
 app.get('/', (req, res) => {
   res.send('iGasabo API running ✅');
