@@ -1,7 +1,10 @@
+import Header from "./components/Header";
+
+
 const App=()=>{
   return(
     <>
-    <h1>Hello Citizens</h1>
+        <Header/>
     </>
   )
 }
