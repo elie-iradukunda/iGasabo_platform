@@ -1,0 +1,58 @@
+
+.allContent {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.heading1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 40px;
+}
+
+.heading1 h2{
+    color: darkcyan;
+}
+
+
+.content2 {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.howitworks {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.howitworks:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.howitworks img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+.howitworks h2 {
+  font-size: 1.25rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.howitworks p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
